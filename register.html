@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Form Control Web Form 2.0 Basic</title>
+
+</head>
+
+<body>
+  <!-- 
+HTML forms are required if you want to collect some data 
+from of the site visitor. 
+
+An HTML form facilitates the user to enter data that is to 
+be sent to the server for processing.
+-->
+  <header>
+    <nav>
+      <a href="index.html">HOME</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+      <a href="login.html">LOGIN</a> |
+      <a href="contactus.html">CONTACT US</a> |
+    </nav>
+  </header>
+  <br />
+  <form action="server url" method="get or post(default is get)">
+
+    <!-- 
+   The <fieldset> tag is used to group related elements in a form.
+   The <fieldset> tag draws a box around the related elements.
+-->
+    <h2>Registration Process</h2>
+    <label for="firstname">First Name: </label>
+    <input type="text" autocomplete="on" id="firstname" name="firstname" />
+
+    <br />
+    <br />
+
+    <label for="lastname">Last Name: </label>
+    <input type="text" autocomplete="on" id="lastname" name="lastname" />
+
+    <br />
+    <br />
+    <!-- 
+ The iPhone and some Android devices using the input type="tel" to 
+ change the virtual keyboard with a numeric keypad.
+ -->
+    <label for="phoneno">Phone Number: </label>
+    <input type="tel" placeholder="xx-xxxx-xxxx" id="phoneno" name="phoneno" />
+
+    <br />
+    <br />
+
+    <label for="dob">Date Of Birth:(Calender Will open in Chrome) </label>
+    <input type="date" id="dob" name="dob" />
+
+    <br />
+    <br />
+
+    <label for="gender">Gender: </label>
+    <input type="radio" id="gender" name="gender" value="male" />Male
+    <input type="radio" id="gender" name="gender" value="female" />Female
+
+    <br />
+    <br />
+
+    <label for="country">Country:</label>
+    <select name="country" id="country" style="width:160px">
+      <option value="cambodia">Cambodia</option>
+      <option value="india">India</option>
+      <option value="pakistan">Pakistan</option>
+      <option value="africa">Africa</option>
+      <option value="china">China</option>
+      <option value="other">Other</option>
+    </select>
+
+    <br />
+    <br />
+
+    <label for="ADDRESS">Address:</label>
+    <textarea rows="6" cols="50"></textarea>
+
+    <br />
+    <br />
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear">
+
+  </form>
+  <br />
+  <br />
+<a href="1.2.login.html">Already registered account</a>
+
+</body>
+
+</html>

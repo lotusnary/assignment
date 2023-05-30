@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Form Control Web Form 2.0 Basic</title>
+
+</head>
+
+<body>
+  <!-- 
+HTML forms are required if you want to collect some data 
+from of the site visitor. 
+
+An HTML form facilitates the user to enter data that is to 
+be sent to the server for processing.
+-->
+  <header>
+    <nav>
+      <a href="index.html">HOME</a> |
+      <a href="register.html">REGISTRATION</a> |
+      <a href="contactus.html">CONTACT US</a> |
+    </nav>
+  </header>
+  <br />
+  <br />
+  <form action="server url" method="get or post(default is get)">
+
+    <!-- 
+   The <fieldset> tag is used to group related elements in a form.
+   The <fieldset> tag draws a box around the related elements.
+-->
+    <fieldset>
+      <legend>Login Info:</legend>
+      <label for="email">Email Address: </label>
+      <input type="email" id="email" name="email" autofocus required placeholder="Enter Email" />
+
+      <br />
+      <br />
+
+      <label for="password">Password: </label>
+      <input type="password" id="password" name="password" autocomplete="off" />
+    </fieldset>
+
+    <br />
+    <br />
+
+    <input type="submit" value="Submit">
+    <button type="cancel" value="cancel">Cancel</button>
+    <br />
+    <br />
+  <a href="1.1.register.html">Create new account</a>
+  </form>
+</body>
+
+</html>
